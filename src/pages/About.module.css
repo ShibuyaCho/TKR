@@ -1,0 +1,17 @@
+.page { padding: 5rem 2rem; }
+.container { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; }
+.eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
+.title { font-size: clamp(28px, 4vw, 40px); font-weight: 500; color: var(--text); line-height: 1.2; }
+.lead { font-size: 17px; color: var(--text-2); line-height: 1.8; }
+.divider { height: 0.5px; background: var(--border); }
+.blocks { display: flex; flex-direction: column; gap: 2rem; }
+.block h2 { font-size: 16px; font-weight: 500; color: var(--gold); margin-bottom: 0.75rem; }
+.block p { font-size: 15px; color: var(--text-2); line-height: 1.8; }
+.cta { background: var(--bg-3); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center; }
+.cta h2 { font-size: 22px; font-weight: 500; color: var(--text); margin-bottom: 0.5rem; }
+.cta p { font-size: 14px; color: var(--text-2); margin-bottom: 1.5rem; }
+.ctaBtns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btnGold { background: var(--gold); color: #0d0d0d; font-size: 13px; font-weight: 600; padding: 11px 24px; border-radius: var(--radius); transition: opacity 0.15s; }
+.btnGold:hover { opacity: 0.88; }
+.btnOutline { background: transparent; color: var(--gold); font-size: 13px; padding: 11px 24px; border-radius: var(--radius); border: 1px solid var(--gold-border); transition: background 0.15s; }
+.btnOutline:hover { background: var(--gold-dim); }

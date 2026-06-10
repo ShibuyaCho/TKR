@@ -1,0 +1,120 @@
+.page { padding: 4rem 2rem; min-height: calc(100vh - 64px); }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.left { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.sub { font-size: 15px; color: var(--text-2); line-height: 1.7; }
+
+.contactItems { display: flex; flex-direction: column; gap: 1rem; margin-top: 0.5rem; }
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-2);
+}
+.contactItem a { color: var(--text); transition: color 0.15s; }
+.contactItem a:hover { color: var(--gold); }
+
+.right {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.form { display: flex; flex-direction: column; gap: 1.25rem; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 12px; color: var(--text-2); font-weight: 500; letter-spacing: 0.3px; }
+.field input, .field select, .field textarea {
+  background: var(--bg-3);
+  border: 0.5px solid var(--border-2);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  border-color: var(--gold-border);
+  outline: none;
+}
+.field textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
+.field select { appearance: none; cursor: pointer; }
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+.checkRow input { accent-color: var(--gold); cursor: pointer; }
+.checkRow label { cursor: pointer; }
+
+.btnSend {
+  background: var(--gold);
+  color: #0d0d0d;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  width: 100%;
+}
+.btnSend:hover { opacity: 0.88; }
+
+.success {
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+.successIcon {
+  font-size: 32px;
+  color: #4ade80;
+  background: #0f2d1a;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.success h2 { font-size: 20px; font-weight: 500; color: var(--text); }
+.success p { font-size: 14px; color: var(--text-2); }
+
+@media (max-width: 768px) {
+  .container { grid-template-columns: 1fr; gap: 2.5rem; }
+  .grid2 { grid-template-columns: 1fr; }
+}
